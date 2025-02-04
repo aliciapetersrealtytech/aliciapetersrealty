@@ -60,9 +60,9 @@ export default defineNuxtConfig({
       'utils/**'
     ],
   },
-  nitro: {
-    preset: 'node-server'
-  },
+  // nitro: {
+  //   preset: 'node-server'
+  // },
   features: {
     inlineStyles: true
   },
