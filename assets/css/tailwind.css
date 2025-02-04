@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary-white {
+        @apply transition flex px-8 py-3 font-secondary font-normal text-white text-sm tracking-widest uppercase bg-transparent border border-white hover:bg-white hover:text-black;
+    }
+
+    .btn-primary-contrast {
+        @apply transition flex px-8 py-3 font-secondary font-normal text-contrast text-sm tracking-widest uppercase bg-transparent border border-contrast hover:bg-contrast hover:text-white;
+    }
+    
+    .btn-primary-white-full {
+        @apply transition flex px-8 py-3 font-secondary font-normal text-white text-sm tracking-widest uppercase bg-contrast border border-contrast hover:bg-white hover:border-white hover:text-contrast;
+    }
+
+    .btn-primary-white-full-reverse {
+        @apply transition flex px-8 py-3 font-secondary font-normal text-contrast text-sm tracking-widest uppercase bg-white border border-white hover:bg-contrast hover:border-contrast hover:text-white;
+    }
+
+    .h1 {
+        @apply font-secondary font-light text-white text-3xl md:text-6xl tracking-widest uppercase;
+    }
+
+    .h2 {
+        @apply font-cormorant tracking-wide text-3xl md:text-5xl;
+    }
+
+    .h3 {
+        @apply font-cormorant text-white text-2xl;
+    }
+
+    .h4 {
+        @apply font-secondary font-normal tracking-widest text-base text-contrast uppercase;
+    }
+
+    .h5 {
+        @apply font-secondary font-normal tracking-widest text-base text-contrast uppercase text-sm;
+    }
+
+    .p {
+        @apply font-secondary font-normal tracking-normal text-lg;
+    }
+
+}
