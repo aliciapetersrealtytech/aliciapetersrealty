@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="flex flex-col items-center justify-center">
-                <NuxtLink to="/about" class="btn-primary-white-full">
+                <NuxtLink to="https://calendly.com/aliciapeters-kw/buyerconsult" class="btn-primary-white-full" target="_blank">
                     schedule a call
                 </NuxtLink>
             </div>
