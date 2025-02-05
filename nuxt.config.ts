@@ -55,6 +55,10 @@ export default defineNuxtConfig({
     //     dir: "public", // Ensure Nuxt knows static images are in 'public'
     //   },
     // },
+    screens: {
+      icon: 50,
+      icon2x: 80
+    },
     dir: 'public',
   },
   imports: {
