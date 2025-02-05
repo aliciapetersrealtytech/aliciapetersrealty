@@ -50,11 +50,12 @@ export default defineNuxtConfig({
     prefix: 'carousel'
   },
   image: {
-    providers: {
-      static: {
-        dir: "public", // Ensure Nuxt knows static images are in 'public'
-      },
-    },
+    // providers: {
+    //   static: {
+    //     dir: "public", // Ensure Nuxt knows static images are in 'public'
+    //   },
+    // },
+    dir: 'public',
   },
   imports: {
     dirs: [
