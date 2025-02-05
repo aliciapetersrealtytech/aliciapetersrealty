@@ -28,6 +28,7 @@
                     src="/img/alicia-peters-logo-white.png" 
                     format="webp" 
                     class="object-cover" 
+                    width="88"
                     height="77"/>
                 <div class="mt-5 mb-2">
                     <h1 class="h1 ">{{ dataObj?.headline }}</h1>
