@@ -133,7 +133,7 @@
     watch(route, value => {
         if(value.path.includes('community')) {
             textColor.value = 'contrast'
-            logoSrc.value = 'aliciapetersrealty/public/img/alicia-peters-logo-contrast.png'
+            logoSrc.value = '/img/alicia-peters-logo-contrast.png'
         } else {
             textColor.value = 'white'
             logoSrc.value = '/img/alicia-peters-logo-white.png'
