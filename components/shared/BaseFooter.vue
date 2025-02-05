@@ -61,6 +61,4 @@
 
     const contentData = ref<FooterContent>()
     contentData.value = footerContent.value?.footerContent
-
-    console.log('contentData', contentData.value)
 </script>

@@ -15,6 +15,9 @@ export const neighborhoodsQuery = (id: string | undefined) => qs.stringify({
         },
         restaurantImage: {
             populate: "*"
+        },
+        image: {
+            populate: "*"
         }
     }
 })

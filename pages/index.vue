@@ -1,6 +1,6 @@
 <template>
     <div class="w-full">
-        <HeroCarousel 
+        <HomeHeroCarousel 
             :dataObj="heroCarouselSectionData"
         />
 
@@ -68,8 +68,6 @@
     const aboutSectionData = homecontent.value?.Sections.find(
         (item): item is TwoColumnImageText => item.__component === 'components.two-column-image-text'
     );
-
-    console.log('aboutSectionData', aboutSectionData)
 
     /**
      * Retrieve the testimonial section

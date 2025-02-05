@@ -15,8 +15,6 @@ export const useWebContentService = () => ({
         const baseUrl = useBaseCmsUrl()
         const strapiQuery = query
 
-        console.log('***', `${baseUrl}/${collection}?${strapiQuery}`)
-
         try {
             const response = await $fetch<{ data: T[] }>(`${baseUrl}/${collection}?${strapiQuery}`, {
                 method: 'GET',

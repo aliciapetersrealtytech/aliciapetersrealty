@@ -4,9 +4,6 @@ import { useNodeMailer } from './services/mailer'
 export default defineEventHandler(async (event: H3Event) => {
     const { sendMail } = useNodeMailer()
     const body = await readBody(event)
-
-    console.log('**** body', body)
-
     const { name, email, phone, message } = body
 
     try {

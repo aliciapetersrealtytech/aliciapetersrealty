@@ -118,7 +118,6 @@
     /**
      * Fetch navigation data
      */
-    console.log('nav', `${baseUrl}/api/global`)
     const { data: navigationContent, error, refresh } = await useAPI<INavigation[]>(`${baseUrl}/api/global`,
         { 
             collection: 'api/navigations',
@@ -127,8 +126,6 @@
             lazy: false
         }
     );
-
-    console.log('navigationContent', navigationContent.value)
 
     watch(route, value => {
         if(value.path.includes('community')) {

@@ -28,6 +28,7 @@
     const submitForm = async (values: any) => {
         isLoading.value = true
         const baseUrl = useBaseUrl()
+        
         try {
             const result = await $fetch(`${baseUrl}/api/mail`, {
                 method: "POST",
@@ -35,9 +36,12 @@
                 headers: { "Content-Type": "application/json" },
             });
 
-            isEmailSent.value = true
-            isLoading.value = false
-            console.log("Email sent successfully", result);
+            if (result && result.success) {
+                isEmailSent.value = true
+                isLoading.value = false
+            } else {
+                throw new Error("Invalid response format");
+            }
         } catch (error) {
             console.error("Failed to send email", error);
         }

@@ -50,8 +50,6 @@
         (item): item is WhyWorkWithMeComponent => item.__component === 'components.why-work-with-me'
     );
 
-    console.log('whyWorkWithMeSectionData', whyWorkWithMeSectionData)
-
     useSeoMeta({
         title: aboutContent.value?.SEO.metaTitle,
         ogTitle: aboutContent.value?.SEO.metaTitle,

@@ -4,6 +4,5 @@ export const useBaseCmsUrl = () => {
         ? config.public.cmsDevUrl
         : config.public.cmsProdUrl
 
-    console.log('baseUrl', baseUrl)
     return baseUrl
 }

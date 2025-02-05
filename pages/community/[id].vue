@@ -31,15 +31,10 @@
 <script setup lang="ts">
     import { neighborhoodsQuery } from '@/queries/neighborhoods'
     import { useRoute } from 'vue-router';
-
     // const { findOne, find } = useStrapi<INeighborhood>()
 
-// // typed to Course
+    // typed to Course
     // findOne('courses', '123')
-    const route = useRoute();
-    const id = route.params.id as string | undefined;
-    const baseUrl = useBaseUrl()
-    // console.log('route.params.documentId', route.params.id)
 
     // const { data, pending, refresh, error } = await useAsyncData(
     //     'neighborhoodscontent',
@@ -53,6 +48,10 @@
     //         },
     //     },
     // })
+
+    const route = useRoute();
+    const id = route.params.id as string | undefined;
+    const baseUrl = useBaseUrl()
 
     /**
      * Fetch homepage data
@@ -94,16 +93,16 @@
     );
 
     useSeoMeta({
-        title: 'Atwater Village | Alicia Peters Realty',
-        ogTitle: 'Alicia Peters Realty',
-        description: 'This is my amazing site, let me tell you all about it.',
-        ogDescription: 'This is my amazing site, let me tell you all about it.',
-        ogImage: '',
+        title: `Alicia Peters Realty | ${community.value?.headline}`,
+        ogTitle: `Alicia Peters Realty | ${community.value?.headline}`,
+        description: `${community.value?.description[0].children[0]?.text}`,
+        ogDescription: `${community.value?.description[0].children[0]?.text}`,
+        ogImage: `${community.value?.image?.formats?.medium?.url}`,
         twitterCard: 'summary_large_image',
-        ogUrl: '',
-        twitterTitle: 'Alicia Peters Realty',
-        twitterDescription: 'Alicia Peters Realty',
-        twitterImage: ''
+        ogUrl: route.fullPath,
+        twitterTitle: `Alicia Peters Realty | ${community.value?.headline}`,
+        twitterDescription: `Checkout this amazing community| ${community.value?.headline}`,
+        twitterImage: `${community.value?.image}`
     })
 
     definePageMeta({

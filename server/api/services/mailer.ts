@@ -19,7 +19,6 @@ export const useNodeMailer = () => {
             html: text,
         }
 
-        console.log('mailOptions', mailOptions)
         return transporter.sendMail(mailOptions)
     }
 

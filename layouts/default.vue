@@ -1,17 +1,19 @@
 <template>
-    <Lenis root>
-        <main class="relative" data-scroll data-scroll-speed="0.3">
-            <SharedBaseNavigation />
-        
-            <section>
-                <slot />
-            </section>
+    <div>
+        <Lenis root>
+            <main class="relative" data-scroll data-scroll-speed="0.3">
+                <SharedBaseNavigation />
+            
+                <section>
+                    <slot />
+                </section>
 
-            <SharedSectionMinimalSlot :verticalPadding="`${padding}`">
-                <SharedBaseFooter />
-            </SharedSectionMinimalSlot>
-        </main>
-    </Lenis>
+                <SharedSectionMinimalSlot :verticalPadding="`${padding}`">
+                    <SharedBaseFooter />
+                </SharedSectionMinimalSlot>
+            </main>
+        </Lenis>
+    </div>
 </template>
 
 <script setup lang="ts">
