@@ -2,7 +2,7 @@
     <header class="absolute w-full mt-5 z-50 px-10">
         <div class="navbar flex justify-between items-center">
             <div class="logo-container">
-                <NuxtImg src="/img/alicia-peters-logo-white.png" height="50" format="webp" provider="static"/>
+                <NuxtImg src="/img/alicia-peters-logo-white.png" height="50" format="webp" provider="none"/>
             </div>
             <nav class="hidden md:block">
                 <div class="flex flex-row" :class="`text-${textColor}`">
