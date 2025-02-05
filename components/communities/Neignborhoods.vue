@@ -38,14 +38,14 @@
                 <div v-if="neighborhoodDetailData.length > 4" class="flex h-auto justify-end items-top z-30">
                     <button @click="swiper.prev()" class="flex justify-end transition mx-2 w-[60px] h-[60px] duration-500 border border-lighter rounded-full bg-transparent hover:bg-light">
                         <div class="flex items-center h-full p-4">
-                            <NuxtImg src="/arrow-left.png" format="webp" class="object-cover"/>
+                            <NuxtImg src="/img/arrow-left.png" format="webp" class="object-cover"/>
                         </div>
 
                     </button>
                     <!-- Go forward one slide -->
                     <button @click="swiper.next()" class="flex justify-end transition mx-2 w-[60px] h-[60px] duration-500 border border-lighter rounded-full bg-transparent hover:bg-light">
                         <div class="flex items-center h-full p-4">
-                            <NuxtImg src="/arrow-right.png" format="webp" class="object-cover"/>
+                            <NuxtImg src="/img/arrow-right.png" format="webp" class="object-cover"/>
                         </div>
                     </button>
                 </div>
