@@ -15,14 +15,14 @@
         <div class="flex h-auto justify-center w-full items-center absolute h-full top-0 left-0 z-10">
             <button @click="swiper.prev()" class="flex justify-end transition mx-4 w-[60px] h-[60px] duration-500 border border-white rounded-full bg-white/50 hover:bg-white">
                 <div class="flex items-center h-full p-4">
-                    <NuxtImg src="/arrow-left.png" format="webp" class="object-cover"/>
+                    <NuxtImg src="/img/arrow-left.png" format="webp" class="object-cover"/>
                 </div>
 
             </button>
             <!-- Go forward one slide -->
             <button @click="swiper.next()" class="flex justify-end transition mx-4 w-[60px] h-[60px] duration-500 border border-white rounded-full bg-white/50 hover:bg-white">
                 <div class="flex items-center h-full p-4">
-                    <NuxtImg src="/arrow-right.png" format="webp" class="object-cover"/>
+                    <NuxtImg src="/img/arrow-right.png" format="webp" class="object-cover"/>
                 </div>
             </button>
         </div>

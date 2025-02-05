@@ -1,7 +1,7 @@
 <template>
     <footer class="flex flex-col w-full max-w-[1140px] mx-auto">
         <div class="flex justify-center items-center flex-col mx-auto mb-20 text-center">
-            <NuxtImg src="/alicia-peters-logo-contrast.png" format="webp" class="object-cover" width="88" height="77"/>
+            <NuxtImg src="/img/alicia-peters-logo-contrast.png" format="webp" class="object-cover" width="88" height="77"/>
             <h4 class="h4 text-sm text-contrast">Los Angeles</h4>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 gap-y-20">
@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div>
-                <NuxtImg src="/kw-logo-dark.png" format="webp" class="object-cover" height="120"/>
+                <NuxtImg src="/img/kw-logo-dark.png" format="webp" class="object-cover" height="120"/>
             </div>
             <div class="flex flex-col col-span-3">
                 <h5 class="mt-3 h5 normal-case">
