@@ -93,9 +93,6 @@
         (item): item is Attraction => item.headline === 'Local Shops and Boutiques'
     );
 
-    console.log('schoolsData', community.value)
-    // console.log('response', response)
-
     useSeoMeta({
         title: 'Atwater Village | Alicia Peters Realty',
         ogTitle: 'Alicia Peters Realty',

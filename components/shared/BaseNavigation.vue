@@ -2,7 +2,7 @@
     <header class="absolute w-full mt-5 z-50 px-10">
         <div class="navbar flex justify-between items-center">
             <div class="logo-container">
-                <NuxtImg src="/img/alicia-peters-logo-white.png" height="50" width="60" format="webp"/>
+                <NuxtImg :src="logoSrc" height="50" width="60" format="webp"/>
             </div>
             <nav class="hidden md:block">
                 <div class="flex flex-row" :class="`text-${textColor}`">
@@ -97,6 +97,7 @@
     const adminStore = useAdminStore()
     const route = useRoute();
     const textColor = ref('white')
+    const logoSrc = ref('/img/alicia-peters-logo-white.png')
     const isMenuOpen = ref(false)
 
     const { open, close } = useModal({
@@ -132,8 +133,10 @@
     watch(route, value => {
         if(value.path.includes('community')) {
             textColor.value = 'contrast'
+            logoSrc.value = 'aliciapetersrealty/public/img/alicia-peters-logo-contrast.png'
         } else {
             textColor.value = 'white'
+            logoSrc.value = '/img/alicia-peters-logo-white.png'
         }
     }, 
     {deep: true, immediate: true})
