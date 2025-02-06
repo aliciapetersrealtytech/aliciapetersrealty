@@ -1,5 +1,10 @@
 import * as qs from 'qs'
 
+/**
+ * Stapi query for retrieving about page content
+ * @returns Stringified query
+ */
+
 const query = {
     populate: {
         SEO: {

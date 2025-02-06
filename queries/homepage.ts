@@ -1,6 +1,9 @@
 import * as qs from 'qs'
 
-// export const urlParamsObject = qs.parse('populate[SEO][populate]=*&populate[Sections][on][components.hero-carousel][populate][heroLink][populate]=*&populate[Sections][on][components.hero-carousel][populate][heroImages][populate]=*&populate[Sections][on][components.two-column-image-text][populate]=*&populate[Sections][on][components.testimonials-section][populate][testimonialGrid][populate]=*')
+/**
+ * Stapi query for retrieving homepage content
+ * @returns Stringified query
+ */
 
 const query = {
     populate: {

@@ -1,7 +1,6 @@
 <template>
     <section class="flex w-full h-full bg-faint" :class="bgColor">
         <div class="flex flex-row w-full max-w-[1140px] mx-auto my-8 justify-between">
-            <!-- <NuxtImg src="/alicia-avatar.jpg" format="webp" class="object-cover" width="250" height="200"/> -->
             <div class="flex flex-col">
                 <div>
                     <h2 class="h2">{{label}}</h2>
