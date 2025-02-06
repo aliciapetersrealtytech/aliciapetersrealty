@@ -32,7 +32,7 @@ export default {
                 cormorant: ['"Cormorant"', "serif"]
             },
             backgroundImage: {
-                'faint-logo': "url('~/assets/img/alicia-peters-logo-faint.png')",
+                'faint-logo': "url('~/public/img/alicia-peters-logo-faint.png')",
             }
         }
     }

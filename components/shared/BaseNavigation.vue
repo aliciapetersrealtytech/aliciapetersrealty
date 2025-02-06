@@ -19,7 +19,7 @@
 
             <div class="md:hidden absolute right-6">
                 <button @click="triggerMenu(!navState)" class="">
-                    <NuxtImg src="/hamburger-nav.svg" width="30" height="auto"/>
+                    <NuxtImg src="/img/hamburger-nav.svg" width="30" height="auto"/>
                 </button>
                 <div class="container flex flex-col" :class="{'active' : navState}">
                     <div class="wrapper flex flex-col h-full justify-start">
